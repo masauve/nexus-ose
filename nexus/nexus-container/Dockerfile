@@ -1,4 +1,4 @@
-FROM rhel
+FROM rhel:latest
 
 MAINTAINER Jochen Cordes <jcordes@redhat.com>
 
