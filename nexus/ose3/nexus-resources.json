@@ -52,7 +52,7 @@
                "dockerStrategy": {
                   "from": {
                      "kind": "ImageStreamTag",
-                     "name": "rhel",
+                     "name": "rhel:latest",
                      "namespace": "ci"
                   }
                }
@@ -71,11 +71,11 @@
          "kind": "ImageStream",
          "apiVersion": "v1",
          "metadata": {
-            "name": "centos",
+            "name": "rhel",
             "namespace": "ci"
          },
          "spec": {
-            "dockerImageRepository": "library/rhel"
+            "dockerImageRepository": "library/rhel:latest"
          }
       },
       {
