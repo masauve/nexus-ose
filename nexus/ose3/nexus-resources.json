@@ -42,7 +42,7 @@
             "source": {
                "type": "Git",
                "git": {
-                  "uri": "https://github.com/jorgemoralespou/nexus-ose",
+                  "uri": "https://github.com/jcordes73/nexus-ose",
                   "ref": "master"
                },
                "contextDir": "nexus/nexus-container"
@@ -52,7 +52,7 @@
                "dockerStrategy": {
                   "from": {
                      "kind": "ImageStreamTag",
-                     "name": "centos:centos7",
+                     "name": "jboss-base-7/jdk8:1.2-10",
                      "namespace": "ci"
                   }
                }
@@ -75,7 +75,7 @@
             "namespace": "ci"
          },
          "spec": {
-            "dockerImageRepository": "library/centos:centos7"
+            "dockerImageRepository": "library/jboss-base-7/jdk8:1.2-10"
          }
       },
       {
