@@ -71,7 +71,7 @@
          "kind": "ImageStream",
          "apiVersion": "v1",
          "metadata": {
-            "name": "rhel",
+            "name": "rhel:latest",
             "namespace": "ci"
          },
          "spec": {
