@@ -211,10 +211,6 @@
                                  {
                                     "name": "pvol",
                                     "mountPath": "/sonatype-work"
-                                 },
-                                 {
-                                    "name": "pvol",
-                                    "mountPath": "/opt/nexus/nexus/conf"
                                  }
                               ],
                               "livenessProbe": {
@@ -435,10 +431,6 @@
                                  {
                                     "name": "pvol",
                                     "mountPath": "/sonatype-work"
-                                 },
-                                 {
-                                    "name": "pvol",
-                                    "mountPath": "/opt/nexus/nexus/conf"
                                  }
                               ],
                               "livenessProbe": {
