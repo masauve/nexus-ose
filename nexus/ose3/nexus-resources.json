@@ -214,7 +214,7 @@
                                  },
                                  {
                                     "name": "pvol",
-                                    "mountPath": "/conf"
+                                    "mountPath": "/opt/nexus/nexus/conf"
                                  }
                               ],
                               "livenessProbe": {
@@ -438,7 +438,7 @@
                                  },
                                  {
                                     "name": "pvol",
-                                    "mountPath": "/conf"
+                                    "mountPath": "/opt/nexus/nexus/conf"
                                  }
                               ],
                               "livenessProbe": {
