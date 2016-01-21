@@ -53,7 +53,6 @@
                   "from": {
                      "kind": "ImageStreamTag",
                      "name": "rhel:latest",
-                     "namespace": "ci"
                   }
                }
             },
