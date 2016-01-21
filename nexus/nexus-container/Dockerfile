@@ -57,6 +57,7 @@ USER jboss
 
 VOLUME ["/sonatype-work"]
 VOLUME ["/repositories"]
+VOLUME ["/conf"]
 
 WORKDIR $NEXUS_HOME
 ENV CONTEXT_PATH /

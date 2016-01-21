@@ -211,6 +211,10 @@
                                  {
                                     "name": "pvol",
                                     "mountPath": "/sonatype-work"
+                                 },
+                                 {
+                                    "name": "pvol",
+                                    "mountPath": "/conf"
                                  }
                               ],
                               "livenessProbe": {
@@ -431,6 +435,10 @@
                                  {
                                     "name": "pvol",
                                     "mountPath": "/sonatype-work"
+                                 },
+                                 {
+                                    "name": "pvol",
+                                    "mountPath": "/conf"
                                  }
                               ],
                               "livenessProbe": {
