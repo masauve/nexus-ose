@@ -9,8 +9,8 @@ ENV NEXUS_HOME /opt/nexus/nexus
 ENV NEXUS_WORK /sonatype-work
 ENV NEXUS_REPOS /repositories
 
-# Install OpenJDK
-RUN yum install -y java-1.8.0-openjdk-headless.x86_64
+# Install OpenJDK,tar
+RUN yum install -y java-1.8.0-openjdk-headless.x86_64 tar
 
 # Install jq
 RUN curl --fail --silent --location --retry 3 \

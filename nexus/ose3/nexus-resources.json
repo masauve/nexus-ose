@@ -70,11 +70,10 @@
          "kind": "ImageStream",
          "apiVersion": "v1",
          "metadata": {
-            "name": "rhel",
-            "namespace": "ci"
+            "name": "rhel"
          },
          "spec": {
-            "dockerImageRepository": "library/rhel:latest"
+            "dockerImageRepository": "registry.access.redhat.com/rhel"
          }
       },
       {
