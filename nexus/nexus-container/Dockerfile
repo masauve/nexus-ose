@@ -1,4 +1,4 @@
-FROM jboss-base-7/jdk8:1.2-10
+FROM rhel
 
 MAINTAINER Jochen Cordes <jcordes@redhat.com>
 
@@ -8,6 +8,9 @@ ENV NEXUS_VERSION 2.11.4-01
 ENV NEXUS_HOME /opt/nexus/nexus
 ENV NEXUS_WORK /sonatype-work
 ENV NEXUS_REPOS /repositories
+
+# Install OpenJDK
+RUN yum install -y java-1.8.0-openjdk-headless.x86_64
 
 # Install jq
 RUN curl --fail --silent --location --retry 3 \

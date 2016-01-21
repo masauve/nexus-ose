@@ -52,7 +52,7 @@
                "dockerStrategy": {
                   "from": {
                      "kind": "ImageStreamTag",
-                     "name": "jboss-base-7/jdk8:1.2-10",
+                     "name": "rhel",
                      "namespace": "ci"
                   }
                }
@@ -75,7 +75,7 @@
             "namespace": "ci"
          },
          "spec": {
-            "dockerImageRepository": "library/jboss-base-7/jdk8:1.2-10"
+            "dockerImageRepository": "library/rhel"
          }
       },
       {
