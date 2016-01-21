@@ -295,6 +295,99 @@
         <autoBlockActive>true</autoBlockActive>
       </externalConfiguration>
     </repository>
+    <repository>
+      <id>fusesource-public</id>
+      <name>FuseSource Public</name>
+      <providerRole>org.sonatype.nexus.proxy.repository.Repository</providerRole>
+      <providerHint>maven2</providerHint>
+      <localStatus>IN_SERVICE</localStatus>
+      <notFoundCacheActive>true</notFoundCacheActive>
+      <notFoundCacheTTL>1440</notFoundCacheTTL>
+      <userManaged>true</userManaged>
+      <exposed>true</exposed>
+      <browseable>true</browseable>
+      <writePolicy>READ_ONLY</writePolicy>
+      <indexable>true</indexable>
+      <searchable>true</searchable>
+      <localStorage>
+        <provider>file</provider>
+      </localStorage>
+      <remoteStorage>
+        <url>https://repo.fusesource.com/nexus/content/groups/public/</url>
+      </remoteStorage>
+      <externalConfiguration>
+        <repositoryPolicy>RELEASE</repositoryPolicy>
+        <checksumPolicy>WARN</checksumPolicy>
+        <fileTypeValidation>true</fileTypeValidation>
+        <downloadRemoteIndex>true</downloadRemoteIndex>
+        <artifactMaxAge>-1</artifactMaxAge>
+        <metadataMaxAge>1440</metadataMaxAge>
+        <itemMaxAge>1440</itemMaxAge>
+        <autoBlockActive>true</autoBlockActive>
+      </externalConfiguration>
+    </repository>
+    <repository>
+      <id>fusesource-ea</id>
+      <name>FuseSource EA</name>
+      <providerRole>org.sonatype.nexus.proxy.repository.Repository</providerRole>
+      <providerHint>maven2</providerHint>
+      <localStatus>IN_SERVICE</localStatus>
+      <notFoundCacheActive>true</notFoundCacheActive>
+      <notFoundCacheTTL>1440</notFoundCacheTTL>
+      <userManaged>true</userManaged>
+      <exposed>true</exposed>
+      <browseable>true</browseable>
+      <writePolicy>READ_ONLY</writePolicy>
+      <indexable>true</indexable>
+      <searchable>true</searchable>
+      <localStorage>
+        <provider>file</provider>
+      </localStorage>
+      <remoteStorage>
+        <url>https://repo.fusesource.com/nexus/content/groups/ea/</url>
+      </remoteStorage>
+      <externalConfiguration>
+        <repositoryPolicy>RELEASE</repositoryPolicy>
+        <checksumPolicy>WARN</checksumPolicy>
+        <fileTypeValidation>true</fileTypeValidation>
+        <downloadRemoteIndex>true</downloadRemoteIndex>
+        <artifactMaxAge>-1</artifactMaxAge>
+        <metadataMaxAge>1440</metadataMaxAge>
+        <itemMaxAge>1440</itemMaxAge>
+        <autoBlockActive>true</autoBlockActive>
+      </externalConfiguration>
+    </repository>
+    <repository>
+      <id>redhat-ga</id>
+      <name>Red Hat GA</name>
+      <providerRole>org.sonatype.nexus.proxy.repository.Repository</providerRole>
+      <providerHint>maven2</providerHint>
+      <localStatus>IN_SERVICE</localStatus>
+      <notFoundCacheActive>true</notFoundCacheActive>
+      <notFoundCacheTTL>1440</notFoundCacheTTL>
+      <userManaged>true</userManaged>
+      <exposed>true</exposed>
+      <browseable>true</browseable>
+      <writePolicy>READ_ONLY</writePolicy>
+      <indexable>true</indexable>
+      <searchable>true</searchable>
+      <localStorage>
+        <provider>file</provider>
+      </localStorage>
+      <remoteStorage>
+        <url>https://maven.repository.redhat.com/ga/</url>
+      </remoteStorage>
+      <externalConfiguration>
+        <repositoryPolicy>RELEASE</repositoryPolicy>
+        <checksumPolicy>WARN</checksumPolicy>
+        <fileTypeValidation>true</fileTypeValidation>
+        <downloadRemoteIndex>true</downloadRemoteIndex>
+        <artifactMaxAge>-1</artifactMaxAge>
+        <metadataMaxAge>1440</metadataMaxAge>
+        <itemMaxAge>1440</itemMaxAge>
+        <autoBlockActive>true</autoBlockActive>
+      </externalConfiguration>
+    </repository>
   </repositories>
   <repositoryGrouping>
     <pathMappings>
