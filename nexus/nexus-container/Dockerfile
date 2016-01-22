@@ -31,7 +31,7 @@ RUN  chmod 777 $NEXUS_HOME \
    && mkdir -p $NEXUS_WORK && chmod -R 777 $NEXUS_WORK \
    && mkdir -p $NEXUS_REPOS && chmod -R 777 $NEXUS_REPOS 
 
-RUN groupadd -r jboss -g 185 && useradd -u 185 -r -g jboss -m -d /home/jboss -s /sbin/nologin -c "JBoss user" jboss
+RUN groupadd -r nexus -g 185 && useradd -u 185 -r -g nexus -m -d /home/nexus -s /sbin/nologin -c "Nexus user" nexus
 
 COPY scripts/readinessProbe.sh /usr/local/bin/readinessProbe.sh
 COPY scripts/fixPermissions.sh /usr/local/bin/fixPermissions.sh
@@ -53,7 +53,7 @@ RUN /usr/local/bin/fixPermissions.sh /conf
 COPY scripts/nexus.xml $NEXUS_HOME/conf/
 RUN /usr/local/bin/fixPermissions.sh $NEXUS_HOME/conf
 
-USER jboss
+USER nexus
 
 VOLUME ["/sonatype-work"]
 VOLUME ["/repositories"]
