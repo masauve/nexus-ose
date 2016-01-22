@@ -109,6 +109,18 @@
          },
          "parameters": [
             {
+               "description": "The Nexus admin login-name.",
+               "displayName": "Nexus Admin login.",
+               "name": "NEXUS_ADMIN_LOGIN_NAME",
+               "value": "admin"
+            },
+            {
+               "description": "The Nexus admin password.",
+               "displayName": "Nexus Admin password.",
+               "name": "NEXUS_ADMIN_PASSWORD",
+               "value": "admin123"
+            },
+            {
                "description": "The name for the application. The service will be named like the application.",
                "displayName": "Application name.",
                "name": "APPLICATION_NAME",
@@ -237,7 +249,18 @@
                               "securityContext": {
                                  "capabilities": {},
                                  "privileged": false
-                              }
+                              },
+                              "env": [
+                                 {
+                                    "name": "NEXUS_ADMIN_LOGIN_NAME",
+                                    "value": "${NEXUS_ADMIN_LOGIN_NAME}"
+                                 },
+                                 {
+                                    "name": "NEXUS_ADMIN_PASSWORD",
+                                    "value": "${NEXUS_ADMIN_PASSWORD}"
+                                 }
+                           
+                              ]
                            }
                         ],
                         "restartPolicy": "Always",
@@ -303,6 +326,18 @@
             "createdBy": "template-nexus"
          },
          "parameters": [
+            {
+               "description": "The Nexus admin login-name.",
+               "displayName": "Nexus Admin login.",
+               "name": "NEXUS_ADMIN_LOGIN_NAME",
+               "value": "admin"
+            },
+            {
+               "description": "The Nexus admin password.",
+               "displayName": "Nexus Admin password.",
+               "name": "NEXUS_ADMIN_PASSWORD",
+               "value": "admin123"
+            },
             {
                "description": "The name for the application. The service will be named like the application.",
                "displayName": "Application name.",
