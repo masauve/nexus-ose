@@ -9,7 +9,7 @@ TEMPLATE_FILE="/tmp/repo.json"
 
 : ${NEXUS_USER:="admin"}
 : ${NEXUS_PASSWORD:="admin123"}
-: ${NEXUS_BASE_URL:="http://${APPLICATION_HOSTNAME}:8081"} # Avoid trailing slash
+: ${NEXUS_BASE_URL:="http://${APPLICATION_HOSTNAME}} # Avoid trailing slash
 
 read -d '' TEMPLATE << EOF
 {
