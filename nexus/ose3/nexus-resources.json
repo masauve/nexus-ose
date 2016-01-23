@@ -258,10 +258,6 @@
                                  {
                                     "name": "NEXUS_ADMIN_PASSWORD",
                                     "value": "${NEXUS_ADMIN_PASSWORD}"
-                                 },
-                                 {
-                                    "name": "APPLICATION_HOSTNAME",
-                                    "value": "${APPLICATION_HOSTNAME}"
                                  }
                               ]
                            }
@@ -504,10 +500,6 @@
                                  {
                                     "name": "NEXUS_ADMIN_PASSWORD",
                                     "value": "${NEXUS_ADMIN_PASSWORD}"
-                                 },
-                                 {
-                                    "name": "APPLICATION_HOSTNAME",
-                                    "value": "${APPLICATION_HOSTNAME}"
                                  }
                               ]
                            }
