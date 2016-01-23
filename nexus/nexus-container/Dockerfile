@@ -29,7 +29,8 @@ RUN mkdir -p /opt/nexus/nexus \
 
 RUN  chmod 777 $NEXUS_HOME \ 
    && mkdir -p $NEXUS_WORK && chmod -R 777 $NEXUS_WORK \
-   && mkdir -p $NEXUS_REPOS && chmod -R 777 $NEXUS_REPOS 
+   && mkdir -p $NEXUS_REPOS && chmod -R 777 $NEXUS_REPOS \
+   && mkdir -p /conf && chmod -R 777 /conf
 
 RUN groupadd -r nexus -g 185 && useradd -u 185 -r -g nexus -m -d /home/nexus -s /sbin/nologin -c "Nexus user" nexus
 
@@ -45,13 +46,7 @@ RUN chmod 755 /usr/local/bin/addjbossrepos.sh
 RUN  /usr/local/bin/fixPermissions.sh /opt/nexus
 RUN  /usr/local/bin/fixPermissions.sh $NEXUS_WORK
 RUN  /usr/local/bin/fixPermissions.sh $NEXUS_REPOS
-
-RUN mkdir /conf
-RUN /usr/local/bin/fixPermissions.sh /conf
-
-# ADD nexus.xml as a workaround until post-deployment scripts work
-COPY scripts/nexus.xml $NEXUS_HOME/conf/
-RUN /usr/local/bin/fixPermissions.sh $NEXUS_HOME/conf
+RUN  /usr/local/bin/fixPermissions.sh /conf
 
 USER nexus
 
