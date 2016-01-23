@@ -400,7 +400,7 @@
                      "rollingParams": {
                         "updatePeriodSeconds": 1,
                         "intervalSeconds": 1,
-                        "timeoutSeconds": 600
+                        "timeoutSeconds": 600,
                         "post": {
                             "failurePolicy": "Ignore",
                             "execNewPod": {
