@@ -390,7 +390,7 @@
     </repository>
     <repository>
       <id>apache-public</id>
-      <name>Red Hat GA</name>
+      <name>Apache Public</name>
       <providerRole>org.sonatype.nexus.proxy.repository.Repository</providerRole>
       <providerHint>maven2</providerHint>
       <localStatus>IN_SERVICE</localStatus>
