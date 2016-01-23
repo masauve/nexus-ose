@@ -258,8 +258,11 @@
                                  {
                                     "name": "NEXUS_ADMIN_PASSWORD",
                                     "value": "${NEXUS_ADMIN_PASSWORD}"
+                                 },
+                                 {
+                                    "name": "APPLICATION_HOSTNAME",
+                                    "value": "${APPLICATION_HOSTNAME}"
                                  }
-                           
                               ]
                            }
                         ],
@@ -492,7 +495,21 @@
                               "securityContext": {
                                  "capabilities": {},
                                  "privileged": false
-                              }
+                              },
+                              "env": [
+                                 {
+                                    "name": "NEXUS_ADMIN_LOGIN_NAME",
+                                    "value": "${NEXUS_ADMIN_LOGIN_NAME}"
+                                 },
+                                 {
+                                    "name": "NEXUS_ADMIN_PASSWORD",
+                                    "value": "${NEXUS_ADMIN_PASSWORD}"
+                                 },
+                                 {
+                                    "name": "APPLICATION_HOSTNAME",
+                                    "value": "${APPLICATION_HOSTNAME}"
+                                 }
+                              ]
                            }
                         ],
                         "restartPolicy": "Always",
