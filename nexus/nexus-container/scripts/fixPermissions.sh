@@ -2,6 +2,8 @@
 
 [ -z $1 ] && echo "You must specify path for fixing permissions" && exit 1
 
+chown -R nexus:nexus $1
+
 # Fixes permissions in folders
 for i in `find $1 -type d`
 do
@@ -21,7 +23,5 @@ do
   [ -w $i ] && chmod go+w $i
   [ -x $i ] && chmod go+x $i
 done  
-
-chown -R nexus.nexus $1
 
 exit 0
