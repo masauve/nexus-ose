@@ -50,8 +50,7 @@ RUN  /usr/local/bin/fixPermissions.sh /conf
 
 USER nexus
 
-VOLUME ["/repositories"]
-VOLUME ["/sonatype-work"]
+VOLUME ["/repositories","/sonatype-work"]
 
 WORKDIR $NEXUS_HOME
 ENV CONTEXT_PATH /
