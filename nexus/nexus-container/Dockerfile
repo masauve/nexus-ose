@@ -47,6 +47,7 @@ RUN  /usr/local/bin/fixPermissions.sh /opt/nexus
 RUN  /usr/local/bin/fixPermissions.sh $NEXUS_WORK
 RUN  /usr/local/bin/fixPermissions.sh $NEXUS_REPOS
 RUN  /usr/local/bin/fixPermissions.sh /conf
+RUN chown -R nexus.nexus /sonatype-work
 
 USER nexus
 
