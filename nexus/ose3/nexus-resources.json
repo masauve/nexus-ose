@@ -165,6 +165,12 @@
                                "containerName": "nexus",
                                "command": [
                                   "/usr/local/bin/addjbossrepos.sh"
+                               ],
+                               "env": [
+                                  {
+                                     "name": "APPLICATION_HOSTNAME",
+                                     "value": "${APPLICATION_HOSTNAME}"
+                                  }
                                ]
                             }
                          }
@@ -407,6 +413,12 @@
                                "containerName": "nexus",
                                "command": [
                                   "/usr/local/bin/addjbossrepos.sh"
+                               ],
+                               "env": [
+                                  {
+                                     "name": "APPLICATION_HOSTNAME",
+                                     "value": "${APPLICATION_HOSTNAME}"
+                                  }
                                ]
                             }
                          }
