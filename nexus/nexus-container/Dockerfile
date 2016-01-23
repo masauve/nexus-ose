@@ -47,12 +47,11 @@ RUN  /usr/local/bin/fixPermissions.sh /opt/nexus
 RUN  /usr/local/bin/fixPermissions.sh $NEXUS_WORK
 RUN  /usr/local/bin/fixPermissions.sh $NEXUS_REPOS
 RUN  /usr/local/bin/fixPermissions.sh /conf
-RUN chown -R nexus.nexus /sonatype-work
 
 USER nexus
 
-VOLUME ["/sonatype-work"]
 VOLUME ["/repositories"]
+VOLUME ["/sonatype-work"]
 
 WORKDIR $NEXUS_HOME
 ENV CONTEXT_PATH /
