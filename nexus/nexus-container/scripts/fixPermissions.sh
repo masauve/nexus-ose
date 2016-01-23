@@ -22,4 +22,6 @@ do
   [ -x $i ] && chmod go+x $i
 done  
 
+chown -R nexus.nexus $1
+
 exit 0
