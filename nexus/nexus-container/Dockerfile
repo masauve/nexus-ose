@@ -1,4 +1,4 @@
-FROM rhel:latest
+FROM rhel:rhel7
 
 MAINTAINER Jochen Cordes <jcordes@redhat.com>
 
@@ -10,7 +10,7 @@ ENV NEXUS_WORK /sonatype-work
 ENV NEXUS_REPOS /repositories
 
 # Install OpenJDK,tar
-RUN yum install -y java-1.8.0-openjdk-headless.x86_64 tar
+RUN yum install -y java-1.8.0-openjdk-headless.x86_64 tar && yum clean all -y
 
 # Install jq
 RUN curl --fail --silent --location --retry 3 \
@@ -48,7 +48,7 @@ RUN  /usr/local/bin/fixPermissions.sh $NEXUS_WORK
 RUN  /usr/local/bin/fixPermissions.sh $NEXUS_REPOS
 RUN  /usr/local/bin/fixPermissions.sh /conf
 
-USER nexus
+USER 185
 
 VOLUME ["/repositories","/sonatype-work"]
 
