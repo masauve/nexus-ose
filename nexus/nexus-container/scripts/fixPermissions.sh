@@ -3,6 +3,7 @@
 [ -z $1 ] && echo "You must specify path for fixing permissions" && exit 1
 
 chown -R nexus:nexus $1
+chmod -R 777 $i
 
 # Fixes permissions in folders
 for i in `find $1 -type d`
