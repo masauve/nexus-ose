@@ -52,7 +52,7 @@
                "dockerStrategy": {
                   "from": {
                      "kind": "ImageStreamTag",
-                     "name": "rhel:rhel7"
+                     "name": "rhel:7.2-38"
                   }
                }
             },
