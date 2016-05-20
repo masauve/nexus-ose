@@ -4,7 +4,7 @@ MAINTAINER Jochen Cordes <jcordes@redhat.com>
 
 EXPOSE 8081
 
-ENV NEXUS_VERSION 2.12.0-01
+ENV NEXUS_VERSION 2.13.0-01
 ENV NEXUS_HOME /opt/nexus/nexus
 ENV NEXUS_WORK /sonatype-work
 ENV NEXUS_REPOS /repositories
