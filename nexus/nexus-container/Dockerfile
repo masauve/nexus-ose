@@ -50,7 +50,6 @@ RUN  /usr/local/bin/fixPermissions.sh /conf
 
 USER 185
 
-VOLUME ["/repositories","/sonatype-work"]
 
 WORKDIR $NEXUS_HOME
 ENV CONTEXT_PATH /
